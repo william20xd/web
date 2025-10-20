@@ -4,7 +4,10 @@
 }
 
 /* General */
-body {
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: var(--negro);
     background-color: #fff;
@@ -60,10 +63,10 @@ footer {
 #servicios,
 #experiencia,
 #inicio {
-    scroll-margin-top: 60px;
-    /* Ajusta según la altura del navbar */
+    scroll-margin-top: 60px; /* Ajusta según la altura del navbar */
 }
 
+/* Redes sociales flotantes */
 .social-float {
     position: fixed;
     top: 50%;
@@ -73,6 +76,7 @@ footer {
     flex-direction: column;
     gap: 15px;
     z-index: 9999;
+    max-width: 50px; /* evita que se salga de la pantalla */
 }
 
 .social-icon {
@@ -81,8 +85,7 @@ footer {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #25d366;
-    /* Cambia según red */
+    background-color: #25d366; /* WhatsApp */
     color: white;
     border-radius: 50%;
     font-size: 24px;
@@ -101,29 +104,46 @@ footer {
     transform: scale(1.1);
 }
 
-
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
+
+    /* Navbar más compacto */
     .navbar-brand img {
-        display: none; /* oculta el logo en móviles */
+        width: 50px;
+        height: auto;
     }
 
     .navbar-brand .logo-text {
-        font-size: 1.2rem; /* ajusta texto si quieres */
+        font-size: 1.2rem;
+        white-space: nowrap; /* evita que baje de línea */
     }
 
     .navbar {
         padding: 0.5rem 1rem;
     }
 
+    /* Hero más compacto */
     .hero {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
+        min-height: auto;
     }
 
+    /* Ajuste de contenedores para que navbar y botones se alineen correctamente */
+    .container {
+        width: 100% !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Ajuste de links en navbar */
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Espaciador navbar */
     .navbar-spacer {
-        height: 50px; /* ajusta según navbar reducido */
+        height: 50px;
     }
 }
-
-
 
 
