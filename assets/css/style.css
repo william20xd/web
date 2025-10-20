@@ -100,3 +100,18 @@ footer {
 .social-icon:hover {
     transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;   /* ajusta según se vea bien */
+        height: auto;
+    }
+    .navbar-brand .logo-text {
+        font-size: 1.2rem; /* más pequeño en móvil */
+    }
+    .navbar {
+        padding: 0.5rem 1rem; /* reduce espacio superior e inferior */
+    }
+}
+
