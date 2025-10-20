@@ -33,11 +33,6 @@ html, body {
     color: var(--rosa) !important;
 }
 
-/* Hero */
-.hero {
-    background: linear-gradient(135deg, var(--rosa) 40%, #fff 100%);
-    padding: 5rem 0;
-}
 
 /* Cards */
 .card-title {
@@ -145,5 +140,6 @@ footer {
         height: 50px;
     }
 }
+
 
 
