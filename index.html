@@ -31,6 +31,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Black & Milk" class="me-2 rounded-circle" width="70" height="50">
                 <span class="logo-text">Black & Milk</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -215,6 +216,15 @@
             once: true,
         });
     </script>
+    <script>
+        window.addEventListener('load', () => {
+            // Forzar recalculo de AOS
+            AOS.refresh();
+
+            // Forzar recalculo del navbar y contenedores
+            document.querySelectorAll('.container').forEach(c => c.style.width = '100%');
+        });
+    </script>
 
     <!-- Redes sociales flotantes -->
     <div class="social-float">
@@ -236,4 +246,3 @@
 </body>
 
 </html>
-
