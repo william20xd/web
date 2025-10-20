@@ -41,12 +41,6 @@ body {
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-    background-color: var(--negro);
-    color: #fff;
-}
-
 .card-anim {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -56,14 +50,19 @@ footer {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
+footer {
+    background-color: var(--negro);
+    color: #fff;
+}
+
+/* Scroll margin para anclas */
 #servicios,
 #experiencia,
 #inicio {
     scroll-margin-top: 60px;
     /* Ajusta según la altura del navbar */
-
 }
-
 
 .social-float {
     position: fixed;
@@ -82,15 +81,21 @@ footer {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #25d366; /* Cambia según red */
+    background-color: #25d366;
+    /* Cambia según red */
     color: white;
     border-radius: 50%;
     font-size: 24px;
     transition: transform 0.2s;
 }
 
-.social-icon.instagram { background: #C13584; }
-.social-icon.facebook { background: #3b5998; }
+.social-icon.instagram {
+    background: #C13584;
+}
+
+.social-icon.facebook {
+    background: #3b5998;
+}
 
 .social-icon:hover {
     transform: scale(1.1);
