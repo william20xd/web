@@ -17,11 +17,8 @@
     <!-- AOS (animaciones al hacer scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- Animate.css -->
+    <!-- Animate.css (efectos predefinidos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -117,8 +114,6 @@
         </div>
     </section>
 
-
-
     <!-- SERVICIOS -->
     <section id="servicios" class="py-5 text-center">
         <div class="container">
@@ -205,24 +200,10 @@
             </div>
         </div>
     </section>
-
     <!-- FOOTER -->
     <footer class="text-center py-3 mt-5 bg-dark text-white">
         <p class="mb-0">© 2025 Black & Milk. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Redes sociales flotantes -->
-    <div class="social-float">
-        <a href="#" class="social-icon whatsapp" title="WhatsApp" id="whatsapp">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="#" class="social-icon instagram" title="Instagram" id="instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
-        <a href="#" class="social-icon facebook" title="Facebook" id="facebook">
-            <i class="bi bi-facebook"></i>
-        </a>
-    </div>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -230,31 +211,29 @@
     <!-- AOS Animaciones -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
-
-    <!-- Social Links JS -->
-    <script>
-        function openSocial(urlApp, urlWeb) {
-            window.location = urlApp;
-            setTimeout(() => { window.open(urlWeb, "_blank"); }, 500);
-        }
-
-        document.getElementById('whatsapp').addEventListener('click', (e) => {
-            e.preventDefault();
-            openSocial('https://wa.me/56922151087', 'https://wa.me/56922151087');
-        });
-
-        document.getElementById('instagram').addEventListener('click', (e) => {
-            e.preventDefault();
-            openSocial('instagram://user?username=tuusuario', 'https://www.instagram.com/tuusuario');
-        });
-
-        document.getElementById('facebook').addEventListener('click', (e) => {
-            e.preventDefault();
-            openSocial('fb://profile/IDusuario', 'https://www.facebook.com/tuusuario');
+        AOS.init({
+            duration: 1000,
+            once: true,
         });
     </script>
+
+    <!-- Redes sociales flotantes -->
+    <div class="social-float">
+        <a href="https://wa.me/+56922151087" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank" class="social-icon instagram" title="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/william.andres.476439" target="_blank" class="social-icon facebook"
+            title="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
 </body>
 
 </html>
