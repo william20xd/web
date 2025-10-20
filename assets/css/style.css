@@ -103,34 +103,36 @@ footer {
 
 
 @media (max-width: 768px) {
+    .navbar-brand {
+        flex-direction: row; /* mantener todo en una línea */
+        align-items: center;
+        gap: 0.3rem; /* espacio entre logo y texto */
+    }
+
     .navbar-brand img {
-        width: 50px;   /* ajusta según se vea bien */
+        width: 40px;  /* más pequeño */
         height: auto;
     }
-    .navbar-brand .logo-text {
-        font-size: 1.2rem; /* más pequeño en móvil */
-    }
-    .navbar {
-        padding: 0.5rem 1rem; /* reduce espacio superior e inferior */
-    }
-}
 
-@media (max-width: 768px) {
+    .navbar-brand .logo-text {
+        font-size: 1rem; /* más pequeño */
+        white-space: nowrap; /* evita que el texto baje de línea */
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* opcional: ajustar tamaño de links */
+    }
+
     .hero {
-        padding: 3rem 1rem; /* menos padding en móvil */
-        min-height: auto;    /* evita que sea demasiado grande */
+        padding: 3rem 1rem;
     }
 
     .navbar-spacer {
-        height: 60px; /* espacio por navbar fijo */
-    }
-}
-
-@media (max-width: 768px) {
-    #servicios,
-    #experiencia,
-    #inicio {
-        scroll-margin-top: 60px; /* coincide con navbar-spacer */
+        height: 55px;
     }
 }
 
