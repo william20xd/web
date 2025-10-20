@@ -115,3 +115,16 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem; /* menos padding en móvil */
+        min-height: auto;    /* evita que sea demasiado grande */
+    }
+
+    .navbar-spacer {
+        height: 60px; /* espacio por navbar fijo */
+    }
+}
+
+
+
