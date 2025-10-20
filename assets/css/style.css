@@ -126,5 +126,13 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    #servicios,
+    #experiencia,
+    #inicio {
+        scroll-margin-top: 60px; /* coincide con navbar-spacer */
+    }
+}
+
 
 
